@@ -1,0 +1,167 @@
+{
+  "id": "banking",
+  "title": "Banking",
+  "icon": "🏦",
+  "description": "Checking vs. savings, debit vs. credit, and how to avoid overdraft fees.",
+  "tools": ["compare", "account"],
+  "lessons": [
+    {
+      "id": "banking-l1",
+      "title": "Checking vs. savings accounts",
+      "body": [
+        "A <b>checking account</b> is for everyday money. Your paycheck lands here, and your debit card, bill payments, and payment apps pull from it. It usually pays little or no interest.",
+        "A <b>savings account</b> is for money you're not spending yet. It pays interest and is a little harder to spend on impulse.",
+        "Most people use both: checking for this month's spending, savings for goals and emergencies."
+      ],
+      "keyIdea": "Checking = spending money. Savings = not-yet money.",
+      "example": "Payday: $300 lands in checking. $50 moves to savings automatically. You spend from the $250."
+    },
+    {
+      "id": "banking-l2",
+      "title": "Debit cards vs. credit cards",
+      "body": [
+        "A <b>debit card</b> spends money that's already yours, straight from your checking account.",
+        "A <b>credit card</b> spends the bank's money. You're borrowing, and you have to pay it back. If you don't pay the full bill by the due date, you pay interest.",
+        "Credit cards can build your <b>credit score</b> and have stronger fraud protection. Debit cards make it harder to spend money you don't have. Both are tools; how you use them matters."
+      ],
+      "keyIdea": "Debit = your money now. Credit = borrowed money you pay back later.",
+      "example": "You buy $40 of groceries. With debit, your checking balance drops $40 right away. With credit, you owe the card company $40 on your next bill."
+    },
+    {
+      "id": "banking-l3",
+      "title": "Overdrafts: the expensive mistake",
+      "body": [
+        "An <b>overdraft</b> happens when you spend more than is in your checking account.",
+        "If you have <b>overdraft coverage</b>, the bank pays it anyway and charges you a fee (often around $35) <i>each time</i>. A $5 snack can turn into a $40 snack.",
+        "If you <b>opt out</b> of overdraft coverage, the card is just declined. That's embarrassing, but free. Many banks also offer low-balance alerts and links to your savings to cover shortfalls."
+      ],
+      "keyIdea": "Check your balance before you spend, and turn on low-balance alerts.",
+      "example": "Balance: $20. You buy a $25 meal. With overdraft coverage, your balance becomes −$5, then a $35 fee makes it −$40."
+    },
+    {
+      "id": "banking-l4",
+      "title": "Banks, credit unions, and fees",
+      "body": [
+        "<b>Banks</b> are businesses. <b>Credit unions</b> are owned by their members and often have lower fees. Online banks often pay more interest.",
+        "Watch for fees: monthly maintenance fees, minimum-balance fees, ATM fees from other banks, and overdraft fees.",
+        "Many banks have <b>student accounts</b> with no monthly fee. A teen under 18 usually needs a parent or guardian on the account."
+      ],
+      "keyIdea": "Pick an account with no monthly fee and free ATMs near you.",
+      "example": "A $5 monthly fee costs $60 a year for nothing. That's a free account's worth of savings."
+    },
+    {
+      "id": "banking-l5",
+      "title": "Keeping your money safe",
+      "body": [
+        "Never share your <b>PIN</b>, password, or the code a bank texts you. Real banks will never ask for these by phone, text, or email.",
+        "Scammers pretend to be your bank, a delivery company, or a friend in trouble. If a message rushes you, it's a red flag. Hang up and call the number on the back of your card.",
+        "Check your account a few times a week. If you see a charge you don't recognize, report it right away."
+      ],
+      "keyIdea": "Urgent + asks for codes or money = scam. Slow down.",
+      "example": "A text says your account is locked and asks you to \"verify\" with a code. Don't reply. Open your bank's app yourself instead."
+    }
+  ],
+  "practice": [
+    {
+      "id": "banking-p1",
+      "type": "mc",
+      "prompt": "Where does money come from when you use a <b>debit card</b>?",
+      "choices": ["A loan from the bank", "Your checking account", "Your credit score", "The store"],
+      "answer": 1,
+      "explanation": "Debit pulls money you already have out of your checking account."
+    },
+    {
+      "id": "banking-p2",
+      "type": "number",
+      "prompt": "Your checking balance is $80. You make a $95 purchase. Your bank covers it and charges a $35 overdraft fee. What is your new balance? (Type a negative number.)",
+      "unit": "$",
+      "answer": -50,
+      "check": "80 - 95 - 35",
+      "explanation": "$80 − $95 = −$15. Then the $35 fee: −$15 − $35 = <b>−$50</b>. You owe the bank $50."
+    },
+    {
+      "id": "banking-p3",
+      "type": "mc",
+      "prompt": "Which account is best for money you're saving for a car next year?",
+      "choices": ["Checking account", "Savings account", "A prepaid gift card", "Cash in your backpack"],
+      "answer": 1,
+      "explanation": "A savings account keeps it separate from spending money and pays some interest."
+    },
+    {
+      "id": "banking-p4",
+      "type": "number",
+      "prompt": "Your account charges a $6 monthly fee. How much is that per year?",
+      "unit": "$",
+      "answer": 72,
+      "check": "6 * 12",
+      "explanation": "$6 × 12 months = <b>$72</b> a year, for nothing."
+    },
+    {
+      "id": "banking-p5",
+      "type": "mc",
+      "prompt": "A text says it's your bank and asks for the 6-digit code they just sent you. What should you do?",
+      "choices": ["Send the code quickly so your account isn't locked", "Don't reply. Contact your bank using the number on your card or the app", "Reply asking if it's real", "Forward it to a friend"],
+      "answer": 1,
+      "explanation": "Banks never ask for those codes. Anyone who has it can get into your account."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "banking-q1",
+      "type": "mc",
+      "prompt": "What's the main difference between a debit card and a credit card?",
+      "choices": ["Debit cards are only for online shopping", "Debit uses your money; credit is borrowed money you pay back", "Credit cards are free money", "There's no difference"],
+      "answer": 1,
+      "explanation": "Debit spends your own money right away. Credit is a loan you repay later."
+    },
+    {
+      "id": "banking-q2",
+      "type": "mc",
+      "prompt": "What is an <b>overdraft</b>?",
+      "choices": ["A bonus for saving", "Spending more than you have in checking", "A type of savings account", "Paying a bill early"],
+      "answer": 1,
+      "explanation": "Overdraft = your balance goes below $0. It often comes with a big fee."
+    },
+    {
+      "id": "banking-q3",
+      "type": "number",
+      "prompt": "You overdraft 3 times in a month. Each one has a $35 fee. How much did you pay in fees?",
+      "unit": "$",
+      "answer": 105,
+      "check": "3 * 35",
+      "explanation": "3 × $35 = <b>$105</b> in fees."
+    },
+    {
+      "id": "banking-q4",
+      "type": "mc",
+      "prompt": "What happens to a purchase if you <b>opted out</b> of overdraft coverage and don't have enough money?",
+      "choices": ["It goes through and you pay a fee", "It's declined, and there's usually no fee", "The store pays for it", "It goes on your credit report"],
+      "answer": 1,
+      "explanation": "Opting out means the card is declined instead of charging an overdraft fee."
+    },
+    {
+      "id": "banking-q5",
+      "type": "mc",
+      "prompt": "Who owns a <b>credit union</b>?",
+      "choices": ["The government", "Its members", "One rich family", "Credit card companies"],
+      "answer": 1,
+      "explanation": "Credit unions are member-owned and often have lower fees than banks."
+    },
+    {
+      "id": "banking-q6",
+      "type": "mc",
+      "prompt": "Which is a <b>red flag</b> for a scam?",
+      "choices": ["Your bank's app shows your balance", "A message that rushes you and asks for a code or password", "A receipt from a store", "A paycheck deposit"],
+      "answer": 1,
+      "explanation": "Pressure + asking for codes, passwords, or gift cards = almost always a scam."
+    }
+  ],
+  "flashcards": [
+    { "id": "banking-f1", "front": "Checking account", "back": "Everyday account for paychecks, debit card spending, and bills." },
+    { "id": "banking-f2", "front": "Savings account", "back": "Account for money you're not spending yet. Pays interest." },
+    { "id": "banking-f3", "front": "Debit card", "back": "Spends money straight from your checking account." },
+    { "id": "banking-f4", "front": "Overdraft", "back": "Spending more than your balance. Often costs a fee (around $35) each time." },
+    { "id": "banking-f5", "front": "Credit union", "back": "A member-owned bank, often with lower fees." },
+    { "id": "banking-f6", "front": "PIN", "back": "Your secret card number. Never share it with anyone, even someone who says they're from your bank." }
+  ]
+}

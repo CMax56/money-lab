@@ -1,0 +1,22 @@
+{
+  "title": "Money Lab",
+  "tagline": "Learn to run your own money: budgets, saving, banks, credit cards, and getting out of debt.",
+  "howTo": [
+    "Pick a section below. Start with <b>Money Basics</b> if you are new. They build on each other from top to bottom.",
+    "Open <b>Learn</b> and swipe through the short lesson cards. Each one takes about a minute.",
+    "Open <b>Try it</b> to play with a real calculator. Change the numbers and watch what happens.",
+    "Ready for real money? Open the <b>Budget Sheet</b> (in <b>Tools</b>). Fill in one sheet each month: plan it, track what you really spend, and print or download it.",
+    "Do the <b>Practice</b> questions. You can try again as many times as you want, and every answer explains why.",
+    "Take the <b>Quiz</b> when you feel ready. Your best score is saved.",
+    "Use <b>Cards</b> (flashcards) and the <b>Glossary</b> at the bottom of the screen to review words you forget."
+  ],
+  "sections": [
+    "basics",
+    "budgeting",
+    "saving",
+    "banking",
+    "credit",
+    "snowball"
+  ],
+  "notice": "Money Lab is for learning. Numbers like tax rates, fees, and interest rates are realistic examples, not advice for your exact situation. Everything you enter stays on this device."
+}

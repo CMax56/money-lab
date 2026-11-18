@@ -1,0 +1,222 @@
+{
+  "id": "credit",
+  "title": "Credit Cards",
+  "icon": "💳",
+  "description": "How credit cards work, what APR really costs, the minimum-payment trap, and your credit score.",
+  "tools": ["card-sim", "utilization", "score"],
+  "lessons": [
+    {
+      "id": "credit-l1",
+      "title": "How a credit card works",
+      "body": [
+        "A credit card lets you borrow money up to a <b>credit limit</b>, like $500 or $1,000.",
+        "Every month you get a <b>statement</b>: a bill that lists what you bought and how much you owe. It has a <b>due date</b>.",
+        "You can pay the full balance, any amount in between, or at least the <b>minimum payment</b>. What you don't pay gets charged interest."
+      ],
+      "keyIdea": "A credit card is a loan. Every swipe is money you have to pay back.",
+      "example": "Your limit is $500. You buy $120 of stuff this month. Your statement says you owe $120, minimum due $25, by the 15th."
+    },
+    {
+      "id": "credit-l2",
+      "title": "APR: the price of borrowing",
+      "body": [
+        "<b>APR</b> (annual percentage rate) is the yearly interest rate on what you owe. Credit card APRs are often 20% to 30%.",
+        "Interest is charged monthly. Monthly rate = <b>APR ÷ 12</b>. In Money Lab, each month's interest = balance × APR ÷ 12 ÷ 100, added before your payment.",
+        "That sounds small per month, but it adds up. A 24% APR is 2% every month on whatever you still owe."
+      ],
+      "keyIdea": "Monthly interest = balance × (APR ÷ 12).",
+      "example": "You owe $600 at 24% APR. 24 ÷ 12 = 2% per month. $600 × 0.02 = $12 interest this month."
+    },
+    {
+      "id": "credit-l3",
+      "title": "The grace period: how to pay $0 interest",
+      "body": [
+        "Most cards have a <b>grace period</b>: the time between the end of your statement and the due date. Check your card's terms; not every card has one.",
+        "When your card has a grace period and you pay the <b>full statement balance</b> by the due date, you pay <b>no interest</b> on purchases. None.",
+        "If you carry a balance, you usually lose the grace period, and new purchases start getting charged interest right away.",
+        "You <b>never need to carry a balance to build credit</b>. Paying in full on time builds the same credit history, without the interest."
+      ],
+      "keyIdea": "With a grace period, paying the full statement balance by the due date every month means no interest on purchases.",
+      "example": "You charge $200 for gas and food, then pay the $200 statement in full. Interest: $0. You still build credit history."
+    },
+    {
+      "id": "credit-l4",
+      "title": "The minimum-payment trap",
+      "body": [
+        "The minimum payment is set low on purpose. Most of it goes to interest, so the balance barely shrinks.",
+        "A common rule: the minimum is <b>the larger of $25</b> (or the whole balance, if less) <b>and 1% of the balance plus that month's interest</b>. Cards differ, but this rule is typical.",
+        "Paying only the minimum on $2,000 at 24% APR takes about <b>12 years</b> and costs almost <b>$2,900</b> in interest. Paying $100 a month instead takes 26 months and about $580 in interest."
+      ],
+      "keyIdea": "The minimum keeps you out of trouble with the bank, not out of debt.",
+      "example": "Try it in the Credit Card Simulator: switch between \"Minimum payment\" and a fixed $100."
+    },
+    {
+      "id": "credit-l5",
+      "title": "Your credit score",
+      "body": [
+        "A <b>credit score</b> (usually 300 to 850) tells lenders how likely you are to pay back money. Higher is better.",
+        "It affects car loans, apartment rentals, interest rates, and sometimes even phone plans and jobs.",
+        "FICO-style scores (the most common kind) weigh roughly: <b>payment history 35%</b>, <b>amounts owed 30%</b>, <b>length of history 15%</b>, <b>new credit 10%</b>, and <b>credit mix 10%</b>.",
+        "These weights are <b>FICO-style and approximate</b>. Scores vary by model (FICO, VantageScore, and different versions of each), so treat them as a guide to what matters most, not exact math."
+      ],
+      "keyIdea": "Paying on time, every time, is the biggest part of your score.",
+      "example": "One payment that's 30+ days late can drop a good score a lot and stay on your report for years."
+    },
+    {
+      "id": "credit-l6",
+      "title": "Good credit card habits",
+      "body": [
+        "<b>1. Pay the full statement balance</b> by the due date every month. With a grace period, that means no interest. Set up autopay for at least the minimum so you're never late. You never need to carry a balance to build credit.",
+        "<b>2. Keep utilization low.</b> Utilization = balance ÷ credit limit. 30% is a common <b>guideline, not a cutoff</b>: lower is better, and under 10% is even better.",
+        "<b>3. Only charge what you already have</b> in checking. Treat it like a debit card that builds credit.",
+        "<b>4. Start simple:</b> a student card, a secured card (you put down a deposit), or being an authorized user on a family member's card."
+      ],
+      "keyIdea": "Use credit like debit: charge it, then pay it all off.",
+      "example": "Limit $1,000. The 30% guideline is $300; under $100 (10%) looks even better. Lower is better, and there's no magic line at exactly 30%."
+    }
+  ],
+  "practice": [
+    {
+      "id": "credit-p1",
+      "type": "number",
+      "prompt": "You owe $600 on a card with 24% APR. How much interest is charged this month?",
+      "unit": "$",
+      "answer": 12,
+      "check": "600 * 24 / 12 / 100",
+      "explanation": "24% ÷ 12 = 2% a month. $600 × 0.02 = <b>$12</b>."
+    },
+    {
+      "id": "credit-p2",
+      "type": "number",
+      "prompt": "Your card balance is $300 and your limit is $1,000. What's your utilization, in percent?",
+      "unit": "%",
+      "answer": 30,
+      "check": "300 / 1000 * 100",
+      "explanation": "$300 ÷ $1,000 = 0.30 = <b>30%</b>."
+    },
+    {
+      "id": "credit-p3",
+      "type": "number",
+      "prompt": "Your limit is $1,500. What's the highest balance that keeps you at or under 30% utilization?",
+      "unit": "$",
+      "answer": 450,
+      "check": "1500 * 0.3",
+      "explanation": "$1,500 × 0.30 = <b>$450</b>."
+    },
+    {
+      "id": "credit-p4",
+      "type": "number",
+      "prompt": "You owe $1,000 at 18% APR and pay $50 every month (no new charges). How many months until it's paid off?",
+      "unit": "months",
+      "answer": 24,
+      "verify": { "kind": "payoff", "balance": 1000, "apr": 18, "payment": 50, "field": "months" },
+      "explanation": "Each month 1.5% interest is added, then $50 is paid. It takes <b>24 months</b> (the last payment is a little smaller). Check it in the simulator!"
+    },
+    {
+      "id": "credit-p5",
+      "type": "mc",
+      "prompt": "Same card: $1,000 at 18% APR, paying $50 a month. About how much interest do you pay in total?",
+      "choices": ["$18", "$90", "$198", "$500"],
+      "answer": 2,
+      "tolerance": 0.5,
+      "verify": { "kind": "payoff", "balance": 1000, "apr": 18, "payment": 50, "field": "totalInterest" },
+      "explanation": "Total interest is about <b>$197.83</b>. You pay back about $1,198 for $1,000 of stuff."
+    },
+    {
+      "id": "credit-p6",
+      "type": "mc",
+      "prompt": "How do you avoid paying any interest on credit card purchases?",
+      "choices": ["Pay the minimum on time", "Pay the full statement balance by the due date", "Only use it on weekends", "Keep the card in a drawer"],
+      "answer": 1,
+      "explanation": "If your card has a grace period, paying the full statement balance by the due date means $0 interest on purchases. You never need to carry a balance to build credit."
+    },
+    {
+      "id": "credit-p7",
+      "type": "mc",
+      "prompt": "Your friend says you have to leave a little balance on your card each month to build credit. Are they right?",
+      "choices": ["Yes, you need to pay some interest to build credit", "No. Paying the full statement balance on time builds credit too, with no interest", "Yes, but only for the first year", "Only if your utilization is over 30%"],
+      "answer": 1,
+      "explanation": "You never need to carry a balance to build credit. On-time payments and low utilization are what count, and paying in full by the due date (with a grace period) means no interest."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "credit-q1",
+      "type": "mc",
+      "prompt": "What does <b>APR</b> stand for?",
+      "choices": ["Average Payment Rate", "Annual Percentage Rate", "Account Penalty Rule", "Automatic Payment Reminder"],
+      "answer": 1,
+      "explanation": "APR = Annual Percentage Rate, the yearly cost of borrowing."
+    },
+    {
+      "id": "credit-q2",
+      "type": "number",
+      "prompt": "You owe $900 at 20% APR. About how much interest is added this month? (Round to the cent.)",
+      "unit": "$",
+      "answer": 15,
+      "check": "900 * 20 / 12 / 100",
+      "explanation": "$900 × 0.20 ÷ 12 = <b>$15.00</b>."
+    },
+    {
+      "id": "credit-q3",
+      "type": "mc",
+      "prompt": "What's the biggest factor in a FICO-style credit score?",
+      "choices": ["How much money you earn", "Payment history (paying on time)", "How many cards you have", "Your age"],
+      "answer": 1,
+      "explanation": "Payment history is about 35% of a FICO-style score (approximate; scores vary by model). Income isn't part of it at all."
+    },
+    {
+      "id": "credit-q4",
+      "type": "mc",
+      "prompt": "You owe $2,000 at 24% APR and pay only the minimum (using the common rule). About how long until it's paid off?",
+      "choices": ["About 1 year", "About 3 years", "About 6 years", "About 12 years"],
+      "answer": 3,
+      "verify": { "kind": "payoff", "balance": 2000, "apr": 24, "mode": "minimum", "field": "years" },
+      "tolerance": 0.5,
+      "explanation": "It takes about 143 months, which is almost <b>12 years</b>, and nearly $2,900 in interest. That's the minimum-payment trap."
+    },
+    {
+      "id": "credit-q5",
+      "type": "number",
+      "prompt": "Your limit is $800 and your balance is $200. What's your utilization, in percent?",
+      "unit": "%",
+      "answer": 25,
+      "check": "200 / 800 * 100",
+      "explanation": "$200 ÷ $800 = <b>25%</b>. That's under the 30% guideline. It's not a cutoff, though: lower is better."
+    },
+    {
+      "id": "credit-q6",
+      "type": "mc",
+      "prompt": "What is a <b>grace period</b>?",
+      "choices": ["Extra time after the due date with no penalty", "The time between the statement and due date when paying in full means no interest", "A month you can skip payments", "The time it takes to get a new card"],
+      "answer": 1,
+      "explanation": "When a card has a grace period, paying the full statement balance by the due date means no interest on purchases."
+    },
+    {
+      "id": "credit-q7",
+      "type": "mc",
+      "prompt": "You owe $500 at 20% APR and pay $50 a month. How long until it's paid off?",
+      "choices": ["10 months", "12 months", "15 months", "24 months"],
+      "answer": 1,
+      "verify": { "kind": "payoff", "balance": 500, "apr": 20, "payment": 50, "field": "months" },
+      "explanation": "Interest adds a bit each month, so it takes <b>12 months</b> instead of 10, with about $51.52 in interest."
+    },
+    {
+      "id": "credit-q8",
+      "type": "mc",
+      "prompt": "What's a <b>secured credit card</b>?",
+      "choices": ["A card with a lock screen", "A card where you put down a deposit that becomes your limit", "A card with no interest ever", "A debit card"],
+      "answer": 1,
+      "explanation": "Secured cards help people with no credit history get started. The deposit protects the bank."
+    }
+  ],
+  "flashcards": [
+    { "id": "credit-f1", "front": "APR", "back": "Annual Percentage Rate: the yearly interest rate. Monthly rate = APR ÷ 12." },
+    { "id": "credit-f2", "front": "Grace period", "back": "If your card has one: pay the full statement balance by the due date and you pay no interest on purchases." },
+    { "id": "credit-f3", "front": "Minimum payment", "back": "The smallest amount you can pay without a late fee. Paying only this keeps you in debt for years." },
+    { "id": "credit-f4", "front": "Credit utilization", "back": "Balance ÷ credit limit. 30% is a guideline, not a cutoff: lower is better (under 10% is great)." },
+    { "id": "credit-f5", "front": "Credit score", "back": "A number (300–850) that shows lenders how reliable you are with borrowed money." },
+    { "id": "credit-f6", "front": "Credit limit", "back": "The most you're allowed to owe on a card." },
+    { "id": "credit-f7", "front": "Statement balance", "back": "What you owed when your monthly bill was made. Pay this in full by the due date to avoid interest (when the card has a grace period). No need to carry a balance to build credit." }
+  ]
+}

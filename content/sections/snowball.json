@@ -1,0 +1,371 @@
+{
+  "id": "snowball",
+  "title": "Debt Snowball",
+  "icon": "⛄",
+  "description": "A step-by-step way to pay off debt: smallest balance first, then roll the payment forward.",
+  "tools": [
+    "snowball"
+  ],
+  "lessons": [
+    {
+      "id": "snowball-l1",
+      "title": "What is the debt snowball?",
+      "body": [
+        "The <b>debt snowball</b> is a plan for paying off several debts. You attack the <b>smallest balance first</b>, no matter the interest rate.",
+        "When that debt is gone, its payment \"rolls\" onto the next one. Each payment gets bigger, like a snowball rolling downhill.",
+        "Why smallest first? Quick wins. Seeing a debt hit $0 in a few months keeps you motivated, and motivation is what gets people all the way to debt-free."
+      ],
+      "keyIdea": "Smallest starting balance first. Roll each paid-off payment into the next debt.",
+      "example": "You owe $300, $800, and $4,000. You throw every extra dollar at the $300 debt first."
+    },
+    {
+      "id": "snowball-l2",
+      "title": "The 5 steps",
+      "body": [
+        "<b>1.</b> List every debt with its balance, minimum payment, and APR.",
+        "<b>2.</b> Sort them from <b>smallest balance to largest</b>, using each debt's <b>starting balance</b>. That order is set once at the start; you don't re-sort every month.",
+        "<b>3.</b> Pay the <b>minimum on every debt</b>, every month. (Missing payments hurts your credit and adds fees.)",
+        "<b>4.</b> Put every <b>extra</b> dollar you can find on the smallest debt.",
+        "<b>5.</b> When it's paid off, add its old payment to the next debt's payment. Repeat until you're debt-free! 🎉"
+      ],
+      "keyIdea": "Your total monthly debt payment never shrinks. It just moves to the next target.",
+      "example": "Find extra money by trimming wants, selling stuff you don't use, or picking up extra shifts."
+    },
+    {
+      "id": "snowball-l3",
+      "title": "A worked example",
+      "body": [
+        "Here are three debts and $100 a month extra. Every number below is calculated live by the same math as the Snowball calculator."
+      ],
+      "workedExample": {
+        "extra": 100,
+        "debts": [
+          {
+            "name": "Phone balance",
+            "balance": 300,
+            "minPayment": 25,
+            "apr": 0
+          },
+          {
+            "name": "Store card",
+            "balance": 800,
+            "minPayment": 30,
+            "apr": 24
+          },
+          {
+            "name": "Car loan",
+            "balance": 4000,
+            "minPayment": 150,
+            "apr": 6
+          }
+        ]
+      },
+      "keyIdea": "Watch how the payment on each target grows as earlier debts disappear.",
+      "example": "Open the Snowball calculator and press \"Load example\" to see the month-by-month table."
+    },
+    {
+      "id": "snowball-l4",
+      "title": "Snowball vs. avalanche",
+      "body": [
+        "The <b>avalanche</b> method targets the <b>highest APR first</b> instead of the smallest balance.",
+        "Avalanche usually saves some interest, because the most expensive debt goes first. Snowball usually gives you your first win sooner.",
+        "In the worked example, avalanche saves about $27 in interest, and both finish in the same month. The best plan is the one you'll actually stick with."
+      ],
+      "keyIdea": "Snowball = smallest balance first (motivation). Avalanche = highest APR first (math).",
+      "example": "If one debt has a huge APR (like 29%) and a big balance, avalanche can save a lot. Try both in the calculator."
+    },
+    {
+      "id": "snowball-l5",
+      "title": "Don't refill the bucket",
+      "body": [
+        "Paying off debt only works if you <b>stop adding new debt</b>. Put the credit card away (or use it only for things you pay in full).",
+        "Build a small emergency fund ($500 to $1,000) first, so a surprise bill doesn't go back on a card.",
+        "When you're debt-free, keep making the same total payment, but to <b>yourself</b>: savings, a car fund, or investing."
+      ],
+      "keyIdea": "Starter emergency fund → snowball the debts → save the payment you used to make.",
+      "example": "Once the debts above are gone, that $305 a month could go to savings. In one year that's $3,660."
+    }
+  ],
+  "practice": [
+    {
+      "id": "snowball-p1",
+      "type": "mc",
+      "prompt": "You owe: Credit card $1,200 (22% APR), Medical bill $250 (0%), Car loan $5,000 (7%). Using the <b>snowball</b>, which do you pay off first?",
+      "choices": [
+        "Credit card $1,200",
+        "Medical bill $250",
+        "Car loan $5,000",
+        "All at the same time"
+      ],
+      "answer": 1,
+      "explanation": "Snowball goes by smallest balance, not interest rate. The $250 medical bill is first.",
+      "reviewed": "Ordering question; the smallest balance is read off the list."
+    },
+    {
+      "id": "snowball-p2",
+      "type": "mc",
+      "prompt": "Same debts. Using the <b>avalanche</b>, which do you pay off first?",
+      "choices": [
+        "Credit card $1,200 (22%)",
+        "Medical bill $250 (0%)",
+        "Car loan $5,000 (7%)",
+        "The one you like least"
+      ],
+      "answer": 0,
+      "explanation": "Avalanche goes by highest APR. The 22% credit card is first."
+    },
+    {
+      "id": "snowball-p3",
+      "type": "number",
+      "prompt": "You were paying $25 minimum + $100 extra on a debt that's now paid off. The next debt's minimum is $30. How much do you pay on it now each month?",
+      "unit": "$",
+      "answer": 155,
+      "check": "30 + 25 + 100",
+      "explanation": "Its own $30 minimum + the old $25 minimum + the $100 extra = <b>$155</b> a month. That's the snowball growing."
+    },
+    {
+      "id": "snowball-p4",
+      "type": "number",
+      "prompt": "In the worked example (Phone $300, Store card $800, Car loan $4,000, $100 extra), how many months until you're debt-free with the snowball?",
+      "unit": "months",
+      "answer": 18,
+      "verify": {
+        "kind": "debts",
+        "method": "snowball",
+        "extra": 100,
+        "field": "months",
+        "debts": [
+          {
+            "name": "Phone balance",
+            "balance": 300,
+            "minPayment": 25,
+            "apr": 0
+          },
+          {
+            "name": "Store card",
+            "balance": 800,
+            "minPayment": 30,
+            "apr": 24
+          },
+          {
+            "name": "Car loan",
+            "balance": 4000,
+            "minPayment": 150,
+            "apr": 6
+          }
+        ]
+      },
+      "explanation": "The phone is gone in month 3, the store card in month 8, and the car loan in month <b>18</b>."
+    },
+    {
+      "id": "snowball-p5",
+      "type": "mc",
+      "prompt": "What should you pay on the debts that <b>aren't</b> your current target?",
+      "choices": [
+        "Nothing until it's their turn",
+        "At least the minimum payment, every month",
+        "Half the minimum",
+        "Whatever is left at the end of the month"
+      ],
+      "answer": 1,
+      "explanation": "Always pay every minimum. Skipping causes late fees, more interest, and credit score damage."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "snowball-q1",
+      "type": "mc",
+      "prompt": "The debt snowball pays off debts in what order?",
+      "choices": [
+        "Highest interest rate first",
+        "Smallest balance first",
+        "Largest balance first",
+        "Oldest debt first"
+      ],
+      "answer": 1,
+      "explanation": "Smallest balance first, for quick wins."
+    },
+    {
+      "id": "snowball-q2",
+      "type": "mc",
+      "prompt": "What is the main reason people like the snowball method?",
+      "choices": [
+        "It always saves the most interest",
+        "Early wins keep you motivated",
+        "It raises your income",
+        "Banks require it"
+      ],
+      "answer": 1,
+      "explanation": "Paying off a whole debt quickly feels great, and that motivation keeps people going. (Avalanche usually saves more interest.)"
+    },
+    {
+      "id": "snowball-q3",
+      "type": "mc",
+      "prompt": "Debts: Store card $800 (24% APR, $30 min), Car loan $4,000 (6%, $150 min), Phone $300 (0%, $25 min). With $100 extra per month, about how much <b>total interest</b> does the snowball cost?",
+      "choices": [
+        "$106",
+        "$306",
+        "$606",
+        "$1,006"
+      ],
+      "answer": 1,
+      "tolerance": 0.5,
+      "verify": {
+        "kind": "debts",
+        "method": "snowball",
+        "extra": 100,
+        "field": "totalInterest",
+        "debts": [
+          {
+            "name": "Store card",
+            "balance": 800,
+            "minPayment": 30,
+            "apr": 24
+          },
+          {
+            "name": "Car loan",
+            "balance": 4000,
+            "minPayment": 150,
+            "apr": 6
+          },
+          {
+            "name": "Phone balance",
+            "balance": 300,
+            "minPayment": 25,
+            "apr": 0
+          }
+        ]
+      },
+      "explanation": "About <b>$306</b> in interest. Avalanche would cost about $279 for the same debts."
+    },
+    {
+      "id": "snowball-q4",
+      "type": "mc",
+      "prompt": "Same debts, but using the <b>avalanche</b> method. About how much total interest?",
+      "choices": [
+        "$179",
+        "$279",
+        "$379",
+        "$479"
+      ],
+      "answer": 1,
+      "tolerance": 0.5,
+      "verify": {
+        "kind": "debts",
+        "method": "avalanche",
+        "extra": 100,
+        "field": "totalInterest",
+        "debts": [
+          {
+            "name": "Store card",
+            "balance": 800,
+            "minPayment": 30,
+            "apr": 24
+          },
+          {
+            "name": "Car loan",
+            "balance": 4000,
+            "minPayment": 150,
+            "apr": 6
+          },
+          {
+            "name": "Phone balance",
+            "balance": 300,
+            "minPayment": 25,
+            "apr": 0
+          }
+        ]
+      },
+      "explanation": "About <b>$279</b>, roughly $27 less than the snowball, because the 24% card goes first."
+    },
+    {
+      "id": "snowball-q5",
+      "type": "number",
+      "prompt": "Debt A is paid off. You were paying $40 minimum + $60 extra on it. Debt B's minimum is $50. What do you pay on Debt B now?",
+      "unit": "$",
+      "answer": 150,
+      "check": "50 + 40 + 60",
+      "explanation": "$50 + $40 + $60 = <b>$150</b> a month on Debt B."
+    },
+    {
+      "id": "snowball-q6",
+      "type": "mc",
+      "prompt": "With the same three debts and $100 extra, what happens if you <b>only pay the minimums</b> with no extra and no rollover?",
+      "choices": [
+        "You finish in 18 months, same as the snowball",
+        "It takes 39 months and costs more than twice the interest",
+        "You never pay them off",
+        "It's faster"
+      ],
+      "answer": 1,
+      "verify": {
+        "kind": "debts",
+        "method": "snowball",
+        "extra": 0,
+        "rollover": false,
+        "field": "months",
+        "debts": [
+          {
+            "name": "Store card",
+            "balance": 800,
+            "minPayment": 30,
+            "apr": 24
+          },
+          {
+            "name": "Car loan",
+            "balance": 4000,
+            "minPayment": 150,
+            "apr": 6
+          },
+          {
+            "name": "Phone balance",
+            "balance": 300,
+            "minPayment": 25,
+            "apr": 0
+          }
+        ]
+      },
+      "explanation": "Minimums only pays $205 a month instead of $305, so it takes 39 months and about $659 interest. The snowball: 18 months and about $306."
+    },
+    {
+      "id": "snowball-q7",
+      "type": "mc",
+      "prompt": "What should you do <b>before</b> starting the snowball?",
+      "choices": [
+        "Open a new credit card",
+        "Save a small emergency fund so surprises don't go on a card",
+        "Stop paying all minimums",
+        "Take out a bigger loan"
+      ],
+      "answer": 1,
+      "explanation": "A $500–$1,000 starter emergency fund keeps new surprises from becoming new debt."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "snowball-f1",
+      "front": "Debt snowball",
+      "back": "Pay minimums on all debts; put extra on the smallest balance; roll each paid-off payment into the next."
+    },
+    {
+      "id": "snowball-f2",
+      "front": "Debt avalanche",
+      "back": "Same idea, but target the highest APR first. Usually saves more interest."
+    },
+    {
+      "id": "snowball-f3",
+      "front": "Rollover",
+      "back": "When a debt is paid off, its payment moves to the next debt instead of disappearing."
+    },
+    {
+      "id": "snowball-f4",
+      "front": "Debt-free date",
+      "back": "The month your last debt hits $0."
+    },
+    {
+      "id": "snowball-f5",
+      "front": "Minimum payment (loans)",
+      "back": "The least you must pay each month. Always pay it on every debt."
+    }
+  ]
+}

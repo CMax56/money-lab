@@ -1,0 +1,280 @@
+{
+  "id": "saving",
+  "title": "Saving",
+  "icon": "🐷",
+  "description": "Emergency funds, savings goals, and how compound interest makes money grow by itself.",
+  "tools": [
+    "goals",
+    "compound"
+  ],
+  "lessons": [
+    {
+      "id": "saving-l1",
+      "title": "Why save at all?",
+      "body": [
+        "Saving is just spending later, on purpose. It lets you buy big things (a car, a laptop, a trip) without borrowing.",
+        "Saving also buys you <b>choices</b>. With money set aside you can say no to a bad job, handle a surprise bill, or jump on a good deal.",
+        "Start small. Saving $10 a week is $520 a year. The habit matters more than the amount."
+      ],
+      "keyIdea": "Savings turn emergencies into inconveniences.",
+      "example": "Your car needs a $400 repair. With savings, it's a bad day. Without savings, it's a credit card balance with interest."
+    },
+    {
+      "id": "saving-l2",
+      "title": "The emergency fund",
+      "body": [
+        "An <b>emergency fund</b> is money saved only for real surprises: a car repair, a medical bill, losing your job.",
+        "<b>Step 1:</b> Save a starter fund of $500 to $1,000.<br><b>Step 2:</b> Later, grow it to 3 to 6 months of your needs.",
+        "A new phone because you want one is <i>not</i> an emergency. A cracked phone you need for work might be."
+      ],
+      "keyIdea": "Keep your emergency fund separate so you don't spend it by accident.",
+      "example": "Your needs cost $1,200 a month. A 3-month fund = 3 × $1,200 = $3,600."
+    },
+    {
+      "id": "saving-l3",
+      "title": "Setting a savings goal",
+      "body": [
+        "Good goals are specific: <b>what</b>, <b>how much</b>, and <b>by when</b>.",
+        "To find how long it takes: <b>(Goal − Already saved) ÷ Saved per week</b>. Round <i>up</i>, because you can't finish in part of a week.",
+        "Too slow? You can save more each week, pick a cheaper goal, or give yourself more time."
+      ],
+      "keyIdea": "Weeks to goal = (goal − saved) ÷ per week, rounded up.",
+      "example": "Goal: $300 headphones. Saved: $40. Saving $20 a week → (300 − 40) ÷ 20 = 13 weeks."
+    },
+    {
+      "id": "saving-l4",
+      "title": "Compound interest: money that grows itself",
+      "body": [
+        "<b>Interest</b> is money a bank pays you for keeping your money there.",
+        "<b>Compound interest</b> means you earn interest on your interest. Each month, the interest gets added to your balance, so next month you earn interest on a bigger amount.",
+        "The secret ingredient is <b>time</b>. Starting at 16 instead of 26 can mean a lot more money later, even with the same deposits."
+      ],
+      "keyIdea": "The earlier you start, the more work compound interest does for you.",
+      "example": "$100 a month at 5% a year: after 30 years about $83,000. After 40 years about $153,000. The last 10 years add about $69,000."
+    },
+    {
+      "id": "saving-l5",
+      "title": "Where to keep your savings",
+      "body": [
+        "A <b>savings account</b> keeps money separate from your spending money. A <b>high-yield savings account</b> pays more interest than a regular one.",
+        "Look for accounts insured by the <b>FDIC</b> (banks) or <b>NCUA</b> (credit unions). Insured means your money is protected up to $250,000 even if the bank fails.",
+        "A jar at home earns no interest and can be lost or stolen. Investing (like stocks) can grow more over many years but can also go down, so it's for long-term money, not emergencies."
+      ],
+      "keyIdea": "Emergency money: safe and easy to reach. Long-term money: can grow in investments.",
+      "example": "Your car fund for next year goes in a high-yield savings account, not the stock market."
+    }
+  ],
+  "practice": [
+    {
+      "id": "saving-p1",
+      "type": "number",
+      "prompt": "Your goal is $300. You have $40 saved and can save $20 a week. How many weeks until you reach it?",
+      "unit": "weeks",
+      "answer": 13,
+      "verify": {
+        "kind": "goal",
+        "goal": 300,
+        "saved": 40,
+        "perWeek": 20
+      },
+      "explanation": "($300 − $40) ÷ $20 = 260 ÷ 20 = <b>13 weeks</b>."
+    },
+    {
+      "id": "saving-p2",
+      "type": "number",
+      "prompt": "Goal: $250 concert trip. Saved: $0. You save $15 a week. How many weeks? (Round up.)",
+      "unit": "weeks",
+      "answer": 17,
+      "verify": {
+        "kind": "goal",
+        "goal": 250,
+        "saved": 0,
+        "perWeek": 15
+      },
+      "explanation": "$250 ÷ $15 = 16.67. You can't stop partway through a week, so round up to <b>17 weeks</b>."
+    },
+    {
+      "id": "saving-p3",
+      "type": "number",
+      "prompt": "Your needs cost $1,500 a month. How big is a 3-month emergency fund?",
+      "unit": "$",
+      "answer": 4500,
+      "check": "3 * 1500",
+      "explanation": "3 × $1,500 = <b>$4,500</b>."
+    },
+    {
+      "id": "saving-p4",
+      "type": "number",
+      "prompt": "You put $200 in an account that pays 5% interest once a year. How much is in the account after 2 years? (Interest compounds yearly.)",
+      "unit": "$",
+      "answer": 220.5,
+      "check": "200 * 1.05 * 1.05",
+      "explanation": "Year 1: $200 × 1.05 = $210. Year 2: $210 × 1.05 = <b>$220.50</b>. Year 2 earned more because it earned interest on the first year's interest."
+    },
+    {
+      "id": "saving-p5",
+      "type": "mc",
+      "prompt": "Which of these is a <b>real emergency</b> for your emergency fund?",
+      "choices": [
+        "A sale on sneakers",
+        "Your car breaks down and you need it to get to work",
+        "A new game comes out",
+        "A friend's birthday"
+      ],
+      "answer": 1,
+      "explanation": "An emergency is surprising and necessary. A sale or a new game is neither."
+    },
+    {
+      "id": "saving-p6",
+      "type": "mc",
+      "prompt": "You start with $1,000, add $50 at the end of every month, and earn 6% a year compounded monthly. About how much do you have after 10 years?",
+      "choices": [
+        "$7,000",
+        "$8,200",
+        "$10,013",
+        "$13,500"
+      ],
+      "answer": 2,
+      "verify": {
+        "kind": "compound",
+        "start": 1000,
+        "monthly": 50,
+        "rate": 6,
+        "years": 10,
+        "field": "final"
+      },
+      "explanation": "You put in $1,000 + $50 × 120 = $7,000. Interest adds about $3,013 more, for about <b>$10,013</b>. Try it in the Compound Interest tool!",
+      "tolerance": 0.5
+    }
+  ],
+  "quiz": [
+    {
+      "id": "saving-q1",
+      "type": "mc",
+      "prompt": "What's a good first target for a starter emergency fund?",
+      "choices": [
+        "$50",
+        "$500 to $1,000",
+        "$50,000",
+        "You don't need one if you have a credit card"
+      ],
+      "answer": 1,
+      "explanation": "A starter fund of $500 to $1,000 covers most small surprises. Grow it to 3 to 6 months of needs later."
+    },
+    {
+      "id": "saving-q2",
+      "type": "number",
+      "prompt": "Goal: $600 laptop. Saved: $150. Saving $25 a week. How many weeks to go?",
+      "unit": "weeks",
+      "answer": 18,
+      "verify": {
+        "kind": "goal",
+        "goal": 600,
+        "saved": 150,
+        "perWeek": 25
+      },
+      "explanation": "($600 − $150) ÷ $25 = 450 ÷ 25 = <b>18 weeks</b>."
+    },
+    {
+      "id": "saving-q3",
+      "type": "mc",
+      "prompt": "What makes <b>compound</b> interest different from simple interest?",
+      "choices": [
+        "It's always a higher rate",
+        "You earn interest on your past interest too",
+        "It's only for loans",
+        "It's paid in cash"
+      ],
+      "answer": 1,
+      "explanation": "Compounding adds interest to your balance, so later interest is earned on a bigger amount."
+    },
+    {
+      "id": "saving-q4",
+      "type": "mc",
+      "prompt": "Two people each save $100 a month at 5%. One starts 10 years earlier. What does the early starter get from those extra 10 years?",
+      "choices": [
+        "About $12,000 more (just the deposits)",
+        "About $69,000 more after 40 years vs. 30",
+        "The same amount",
+        "Less, because rates change"
+      ],
+      "answer": 1,
+      "verify": {
+        "kind": "compoundDiff",
+        "monthly": 100,
+        "rate": 5,
+        "years": 40,
+        "years2": 30
+      },
+      "explanation": "After 40 years: about $152,600. After 30 years: about $83,200. Difference: about <b>$69,000</b>, even though the extra deposits were only $12,000. That's time doing the work.",
+      "tolerance": 500
+    },
+    {
+      "id": "saving-q5",
+      "type": "mc",
+      "prompt": "What does FDIC insurance do?",
+      "choices": [
+        "Makes your account earn more interest",
+        "Protects your bank deposits (up to $250,000) if the bank fails",
+        "Insures your car",
+        "Pays your bills automatically"
+      ],
+      "answer": 1,
+      "explanation": "FDIC (banks) and NCUA (credit unions) insure deposits up to $250,000 per person, per bank, per account type."
+    },
+    {
+      "id": "saving-q6",
+      "type": "number",
+      "prompt": "You save $10 a week for a whole year (52 weeks). How much have you saved, not counting interest?",
+      "unit": "$",
+      "answer": 520,
+      "check": "10 * 52",
+      "explanation": "$10 × 52 = <b>$520</b>."
+    },
+    {
+      "id": "saving-q7",
+      "type": "mc",
+      "prompt": "Where's the best place for your emergency fund?",
+      "choices": [
+        "In stocks, so it grows fast",
+        "In a savings account that's separate from your spending account",
+        "In a jar in your closet",
+        "Loaned to a friend"
+      ],
+      "answer": 1,
+      "explanation": "Emergency money should be safe and easy to reach, but not so easy that you spend it by accident."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "saving-f1",
+      "front": "Emergency fund",
+      "back": "Money saved only for real surprises. Start with $500–$1,000, grow to 3–6 months of needs."
+    },
+    {
+      "id": "saving-f2",
+      "front": "Compound interest",
+      "back": "Earning interest on your interest, so growth speeds up over time."
+    },
+    {
+      "id": "saving-f3",
+      "front": "Weeks to a goal",
+      "back": "(Goal − saved) ÷ amount per week, rounded up."
+    },
+    {
+      "id": "saving-f4",
+      "front": "High-yield savings account",
+      "back": "A savings account that pays a higher interest rate than a regular one."
+    },
+    {
+      "id": "saving-f5",
+      "front": "FDIC / NCUA",
+      "back": "Government insurance that protects bank / credit union deposits up to $250,000."
+    },
+    {
+      "id": "saving-f6",
+      "front": "Interest rate (APY)",
+      "back": "How much a bank pays you per year, as a percent of your balance."
+    }
+  ]
+}

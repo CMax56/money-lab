@@ -1,0 +1,264 @@
+{
+  "id": "basics",
+  "title": "Money Basics",
+  "icon": "🧾",
+  "description": "Needs vs. wants, where money comes from, and why your paycheck is smaller than you expected.",
+  "tools": [
+    "sort-game",
+    "paycheck"
+  ],
+  "lessons": [
+    {
+      "id": "basics-l1",
+      "title": "Needs vs. wants",
+      "body": [
+        "A <b>need</b> is something you must have to live, work, or stay safe. Think food, a place to live, basic clothes, and getting to work or school.",
+        "A <b>want</b> is something that makes life more fun or easier, but you could live without it. Think concert tickets, a new game, or name-brand sneakers.",
+        "The tricky part: the same thing can be both. You <i>need</i> shoes. You <i>want</i> the $180 pair. The basic version is the need; the upgrade is the want."
+      ],
+      "keyIdea": "Ask: \"What happens if I don't buy this?\" If the answer is \"not much,\" it's a want.",
+      "example": "Phone service you need for work = need. The newest phone model when yours works fine = want."
+    },
+    {
+      "id": "basics-l2",
+      "title": "Where money comes from",
+      "body": [
+        "<b>Income</b> is money coming in. For most teens that's a part-time job, an allowance, gifts, or side gigs like babysitting, mowing lawns, or tutoring.",
+        "Some income is steady (a job with set hours). Some is irregular (birthday money, summer gigs). Steady income is easier to plan around.",
+        "When income is irregular, plan your budget using the <i>lowest</i> month you expect. Treat extra money as a bonus for saving."
+      ],
+      "keyIdea": "You can only spend money once. Knowing how much comes in is step one of every budget.",
+      "example": "You earn about $150 a month babysitting, but some months only $80. Plan as if it's $80, and save anything over that."
+    },
+    {
+      "id": "basics-l3",
+      "title": "Gross pay vs. net pay",
+      "body": [
+        "<b>Gross pay</b> is what you earn before anything is taken out: hourly wage × hours worked.",
+        "<b>Net pay</b> (\"take-home pay\") is what actually lands in your bank account after taxes and other deductions.",
+        "Your first paycheck might feel small. That's normal! Always budget with <b>net</b> pay, because that's the money you can actually spend."
+      ],
+      "keyIdea": "Gross = before taxes. Net = after taxes. Budget with net.",
+      "example": "You work 20 hours at $15/hour. Gross pay = 20 × $15 = $300. After taxes you might take home about $235."
+    },
+    {
+      "id": "basics-l4",
+      "title": "What gets taken out of a paycheck",
+      "body": [
+        "<b>Federal income tax</b> pays for national things like roads and the military. How much depends on how much you earn. Many teens with small incomes get some or all of it back as a <b>tax refund</b>.",
+        "<b>State income tax</b> works the same way for your state. Some states don't have one.",
+        "<b>FICA</b> is Social Security (6.2%) plus Medicare (1.45%). These pay for retirement and health care for older adults. You don't get these back.",
+        "When you start a job you fill out a <b>W-4</b> form. It tells your employer how much federal tax to hold back."
+      ],
+      "keyIdea": "Your pay stub lists every deduction. Read it the first time so nothing surprises you.",
+      "example": "In the Paycheck calculator, try changing the hours to see how each deduction grows with your pay."
+    },
+    {
+      "id": "basics-l5",
+      "title": "Every choice has a cost",
+      "body": [
+        "<b>Opportunity cost</b> is what you give up when you choose one thing over another. Spending $60 on a game means that $60 can't go toward your car fund.",
+        "Try the <b>24-hour rule</b>: when you want something that isn't a need, wait a day. If you still want it tomorrow, it might be worth it.",
+        "Another trick: turn prices into <b>hours of work</b>. If you earn $12 an hour, $90 sneakers cost you 7.5 hours of work."
+      ],
+      "keyIdea": "Before buying, ask: \"What else could this money do for me?\"",
+      "example": "A $6 drink every school day is about $120 a month. That's almost 10 hours of work at $12/hour."
+    }
+  ],
+  "practice": [
+    {
+      "id": "basics-p1",
+      "type": "mc",
+      "prompt": "Which of these is a <b>need</b>?",
+      "choices": [
+        "A new phone case with your favorite team on it",
+        "Gas to drive to your job",
+        "A movie streaming subscription",
+        "Concert tickets"
+      ],
+      "answer": 1,
+      "explanation": "Gas gets you to work, and work is how you earn money. The others are nice to have, but you could live without them."
+    },
+    {
+      "id": "basics-p2",
+      "type": "number",
+      "prompt": "You work 15 hours at $12 an hour. What is your <b>gross pay</b>?",
+      "unit": "$",
+      "answer": 180,
+      "check": "15 * 12",
+      "explanation": "Gross pay = hours × hourly wage = 15 × $12 = <b>$180</b>. That's before any taxes come out."
+    },
+    {
+      "id": "basics-p3",
+      "type": "number",
+      "prompt": "Your gross pay is $250. Your pay stub shows $41 taken out for taxes. What is your <b>net pay</b>?",
+      "unit": "$",
+      "answer": 209,
+      "check": "250 - 41",
+      "explanation": "Net pay = gross pay − deductions = $250 − $41 = <b>$209</b>. This is what you can actually spend."
+    },
+    {
+      "id": "basics-p4",
+      "type": "number",
+      "prompt": "Social Security takes 6.2% of your gross pay. If you earn $300 gross, how much goes to Social Security?",
+      "unit": "$",
+      "answer": 18.6,
+      "check": "300 * 0.062",
+      "explanation": "6.2% = 0.062. So $300 × 0.062 = <b>$18.60</b>."
+    },
+    {
+      "id": "basics-p5",
+      "type": "mc",
+      "prompt": "Your income changes month to month (some months $200, some months $120). Which amount should you build your budget on?",
+      "choices": [
+        "$200, the best month",
+        "$160, the average",
+        "$120, the lowest month",
+        "Don't make a budget until income is steady"
+      ],
+      "answer": 2,
+      "explanation": "Plan with the lowest month you expect. Then you never come up short, and extra months become bonus savings.",
+      "reviewed": "Picks the lowest of the listed amounts; no calculation."
+    },
+    {
+      "id": "basics-p6",
+      "type": "number",
+      "prompt": "You earn $12 an hour. How many hours of work does a $90 pair of sneakers cost you?",
+      "unit": "hours",
+      "answer": 7.5,
+      "check": "90 / 12",
+      "explanation": "$90 ÷ $12 per hour = <b>7.5 hours</b> of work. Thinking in hours makes prices feel more real."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "basics-q1",
+      "type": "mc",
+      "prompt": "What is <b>net pay</b>?",
+      "choices": [
+        "Your pay before taxes",
+        "Your pay after taxes and deductions",
+        "Your hourly wage",
+        "Your yearly salary"
+      ],
+      "answer": 1,
+      "explanation": "Net pay is your take-home pay: what's left after taxes and other deductions."
+    },
+    {
+      "id": "basics-q2",
+      "type": "mc",
+      "prompt": "You need shoes for your job. Which choice keeps it a <b>need</b> and not a want?",
+      "choices": [
+        "The $180 limited-edition pair",
+        "A basic, comfortable $55 pair that meets the dress code",
+        "Two pairs so you have options",
+        "Waiting until they go viral"
+      ],
+      "answer": 1,
+      "explanation": "The basic pair covers the need. Anything fancier is the \"want\" part of the purchase."
+    },
+    {
+      "id": "basics-q3",
+      "type": "number",
+      "prompt": "You work 18 hours at $14 an hour. What is your gross pay?",
+      "unit": "$",
+      "answer": 252,
+      "check": "18 * 14",
+      "explanation": "18 × $14 = <b>$252</b>."
+    },
+    {
+      "id": "basics-q4",
+      "type": "mc",
+      "prompt": "Medicare takes 1.45% of gross pay. About how much is that on a $400 paycheck?",
+      "choices": [
+        "$1.45",
+        "$5.80",
+        "$14.50",
+        "$58.00"
+      ],
+      "answer": 1,
+      "check": "400 * 0.0145",
+      "explanation": "$400 × 0.0145 = <b>$5.80</b>."
+    },
+    {
+      "id": "basics-q5",
+      "type": "mc",
+      "prompt": "What is <b>opportunity cost</b>?",
+      "choices": [
+        "The sales tax on a purchase",
+        "What you give up when you choose one thing over another",
+        "A fee your bank charges",
+        "The cost of a job interview"
+      ],
+      "answer": 1,
+      "explanation": "Every dollar can only be spent once. The thing you <i>didn't</i> get is the opportunity cost."
+    },
+    {
+      "id": "basics-q6",
+      "type": "mc",
+      "prompt": "Which form tells your employer how much federal tax to hold back from your pay?",
+      "choices": [
+        "W-4",
+        "1040",
+        "FICA",
+        "A pay stub"
+      ],
+      "answer": 0,
+      "explanation": "You fill out a W-4 when you start a job. Your employer uses it to figure out federal tax withholding."
+    },
+    {
+      "id": "basics-q7",
+      "type": "number",
+      "prompt": "You buy a $5 drink every school day. With about 20 school days in a month, how much is that per month?",
+      "unit": "$",
+      "answer": 100,
+      "check": "5 * 20",
+      "explanation": "$5 × 20 days = <b>$100</b> a month. Small daily buys add up fast."
+    },
+    {
+      "id": "basics-q8",
+      "type": "mc",
+      "prompt": "Which deductions do you usually <b>not</b> get back as a refund?",
+      "choices": [
+        "Federal income tax",
+        "State income tax",
+        "Social Security and Medicare (FICA)",
+        "All of them come back"
+      ],
+      "answer": 2,
+      "explanation": "Income tax can be partly refunded if too much was held back. FICA (Social Security + Medicare) is not refunded."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "basics-f1",
+      "front": "Need",
+      "back": "Something you must have to live, work, or stay safe (food, housing, basic clothes, getting to work)."
+    },
+    {
+      "id": "basics-f2",
+      "front": "Want",
+      "back": "Something nice to have that you could live without (games, concerts, name brands)."
+    },
+    {
+      "id": "basics-f3",
+      "front": "Gross pay",
+      "back": "What you earn before taxes: hourly wage × hours worked."
+    },
+    {
+      "id": "basics-f4",
+      "front": "Net pay",
+      "back": "Take-home pay: what's left after taxes and deductions. Budget with this number."
+    },
+    {
+      "id": "basics-f5",
+      "front": "FICA",
+      "back": "Social Security (6.2%) + Medicare (1.45%) taken from each paycheck."
+    },
+    {
+      "id": "basics-f6",
+      "front": "Opportunity cost",
+      "back": "What you give up when you choose to spend money on something else."
+    }
+  ]
+}

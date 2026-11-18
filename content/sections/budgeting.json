@@ -1,0 +1,456 @@
+{
+  "id": "budgeting",
+  "title": "Budgeting",
+  "icon": "📊",
+  "description": "Give every dollar a job. Learn the 50/30/20 rule and build your own budget.",
+  "tools": [
+    "budget",
+    "sheet"
+  ],
+  "lessons": [
+    {
+      "id": "budgeting-l1",
+      "title": "What a budget is (and isn't)",
+      "body": [
+        "A <b>budget</b> is a plan for your money. You decide ahead of time where each dollar goes.",
+        "A budget is not a punishment. It's how you make sure money goes to the things you care about most, instead of disappearing.",
+        "The simple formula: <b>Income − Spending − Saving = What's left</b>. If \"what's left\" is below zero, the plan needs to change."
+      ],
+      "keyIdea": "A budget tells your money where to go, instead of wondering where it went.",
+      "example": "You take home $600 a month. You plan $200 for needs, $150 for fun, $200 for savings, and keep $50 as a cushion."
+    },
+    {
+      "id": "budgeting-l2",
+      "title": "The 50/30/20 rule",
+      "body": [
+        "The <b>50/30/20 rule</b> is an easy starting point for splitting take-home pay:",
+        "<b>50% Needs</b>: rent, groceries, phone, insurance, gas, minimum debt payments.<br><b>30% Wants</b>: eating out, games, clothes beyond basics, hobbies.<br><b>20% Savings</b>: emergency fund, goals, and extra debt payments.",
+        "It's a guide, not a rule. The warnings in the Budget Builder are guides too. If you live at home and have few bills, you can save way more than 20%. If rent is high, needs may go over 50% for a while."
+      ],
+      "keyIdea": "Needs 50%, Wants 30%, Savings 20% of your take-home pay: a starting guide, not a rule.",
+      "example": "Take-home pay of $2,000 → $1,000 needs, $600 wants, $400 savings."
+    },
+    {
+      "id": "budgeting-l3",
+      "title": "Fixed vs. variable expenses",
+      "body": [
+        "<b>Fixed expenses</b> are the same every month: rent, a phone plan, a streaming subscription, a car payment.",
+        "<b>Variable expenses</b> change month to month: groceries, gas, eating out, gifts.",
+        "Fixed costs are easy to plan. Variable costs are where budgets usually break, so track them closely for the first few months."
+      ],
+      "keyIdea": "Cut variable expenses first. They're the easiest to change quickly.",
+      "example": "Your $45 phone bill is fixed. Your food-with-friends spending ($30 one month, $90 the next) is variable."
+    },
+    {
+      "id": "budgeting-l4",
+      "title": "Pay yourself first",
+      "body": [
+        "<b>Pay yourself first</b> means you move money to savings the day you get paid, before you spend anything.",
+        "If you wait to save \"whatever is left,\" there's usually nothing left.",
+        "Most banks let you set up an <b>automatic transfer</b> from checking to savings on payday. Set it once and forget it."
+      ],
+      "keyIdea": "Savings is a bill you pay to your future self, first.",
+      "example": "Every payday, $40 moves to savings automatically. You budget the rest and never miss it."
+    },
+    {
+      "id": "budgeting-l5",
+      "title": "Track it and adjust",
+      "body": [
+        "A budget is a guess. Tracking tells you what really happened.",
+        "Once a week, look at what you spent. Compare it to your plan. Over in one category? Take it from another category, not from savings.",
+        "Expect your first few budgets to be wrong. Every month you'll get closer. That's how everyone learns."
+      ],
+      "keyIdea": "Plan → Track → Compare → Adjust. Repeat every month.",
+      "example": "You planned $60 for eating out but spent $95. Next month you either plan $95 and cut clothes by $35, or eat out less."
+    },
+    {
+      "id": "budgeting-l6",
+      "title": "Your monthly budget sheet",
+      "body": [
+        "The Budget Builder is for planning. The <b>Budget Sheet</b> is for real life: one sheet for each month, filled in by you.",
+        "Each line has a <b>Planned</b> amount (your guess at the start of the month) and an <b>Actual</b> amount (what really happened). The <b>Difference</b> is Actual minus Planned.",
+        "Use the spending log to write down each purchase as it happens. At the end of the month, look at what went over, then copy the plan to next month and adjust."
+      ],
+      "keyIdea": "Plan at the start of the month, track during it, compare at the end. Then copy and adjust.",
+      "example": "You planned $50 for gas and spent $65. The sheet says “You spent $15.00 more than planned on Gas.” Next month you plan $65, and take the $15 from eating out.",
+      "tryTool": "sheet"
+    }
+  ],
+  "samples": [
+    {
+      "id": "teen",
+      "name": "Teen with a part-time job",
+      "note": "Lives at home. Pays for own phone, gas, and fun. Saving for college and a car.",
+      "income": 600,
+      "cats": [
+        {
+          "name": "Phone bill",
+          "group": "need",
+          "amount": 40
+        },
+        {
+          "name": "Gas",
+          "group": "need",
+          "amount": 50
+        },
+        {
+          "name": "Car insurance share",
+          "group": "need",
+          "amount": 60
+        },
+        {
+          "name": "School lunches",
+          "group": "need",
+          "amount": 40
+        },
+        {
+          "name": "Eating out with friends",
+          "group": "want",
+          "amount": 60
+        },
+        {
+          "name": "Games & streaming",
+          "group": "want",
+          "amount": 20
+        },
+        {
+          "name": "Clothes",
+          "group": "want",
+          "amount": 40
+        },
+        {
+          "name": "Fun money",
+          "group": "want",
+          "amount": 50
+        },
+        {
+          "name": "Car fund",
+          "group": "save",
+          "amount": 150
+        },
+        {
+          "name": "Emergency fund",
+          "group": "save",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "apartment",
+      "name": "First apartment",
+      "note": "Full-time job, shares nothing. Rent is the biggest bill, so needs run over 50%.",
+      "income": 2800,
+      "cats": [
+        {
+          "name": "Rent",
+          "group": "need",
+          "amount": 950
+        },
+        {
+          "name": "Utilities & internet",
+          "group": "need",
+          "amount": 120
+        },
+        {
+          "name": "Phone bill",
+          "group": "need",
+          "amount": 50
+        },
+        {
+          "name": "Groceries",
+          "group": "need",
+          "amount": 300
+        },
+        {
+          "name": "Gas",
+          "group": "need",
+          "amount": 120
+        },
+        {
+          "name": "Car insurance",
+          "group": "need",
+          "amount": 110
+        },
+        {
+          "name": "Student loan minimum",
+          "group": "need",
+          "amount": 200
+        },
+        {
+          "name": "Eating out",
+          "group": "want",
+          "amount": 150
+        },
+        {
+          "name": "Streaming & apps",
+          "group": "want",
+          "amount": 30
+        },
+        {
+          "name": "Gym",
+          "group": "want",
+          "amount": 30
+        },
+        {
+          "name": "Fun & hobbies",
+          "group": "want",
+          "amount": 150
+        },
+        {
+          "name": "Clothes",
+          "group": "want",
+          "amount": 80
+        },
+        {
+          "name": "Emergency fund",
+          "group": "save",
+          "amount": 300
+        },
+        {
+          "name": "Retirement",
+          "group": "save",
+          "amount": 150
+        }
+      ]
+    },
+    {
+      "id": "summer",
+      "name": "Summer job, saving for a car",
+      "note": "Big summer paycheck, one big goal. Wants are kept small on purpose.",
+      "income": 1200,
+      "cats": [
+        {
+          "name": "Phone bill",
+          "group": "need",
+          "amount": 40
+        },
+        {
+          "name": "Gas & bus fare",
+          "group": "need",
+          "amount": 60
+        },
+        {
+          "name": "Work clothes",
+          "group": "need",
+          "amount": 30
+        },
+        {
+          "name": "Eating out",
+          "group": "want",
+          "amount": 80
+        },
+        {
+          "name": "Fun money",
+          "group": "want",
+          "amount": 90
+        },
+        {
+          "name": "Car fund",
+          "group": "save",
+          "amount": 800
+        },
+        {
+          "name": "Emergency fund",
+          "group": "save",
+          "amount": 100
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "id": "budgeting-p1",
+      "type": "number",
+      "prompt": "Using the 50/30/20 rule, how much of a $2,000 take-home pay goes to <b>needs</b>?",
+      "unit": "$",
+      "answer": 1000,
+      "check": "2000 * 0.5",
+      "explanation": "Needs are 50%. $2,000 × 0.50 = <b>$1,000</b>."
+    },
+    {
+      "id": "budgeting-p2",
+      "type": "number",
+      "prompt": "Using 50/30/20, how much of $1,500 goes to <b>wants</b>?",
+      "unit": "$",
+      "answer": 450,
+      "check": "1500 * 0.3",
+      "explanation": "Wants are 30%. $1,500 × 0.30 = <b>$450</b>."
+    },
+    {
+      "id": "budgeting-p3",
+      "type": "number",
+      "prompt": "Using 50/30/20, how much of $800 goes to <b>savings</b>?",
+      "unit": "$",
+      "answer": 160,
+      "check": "800 * 0.2",
+      "explanation": "Savings are 20%. $800 × 0.20 = <b>$160</b>."
+    },
+    {
+      "id": "budgeting-p4",
+      "type": "mc",
+      "prompt": "Which one is a <b>variable</b> expense?",
+      "choices": [
+        "A $45 phone plan",
+        "A $12 streaming subscription",
+        "Groceries",
+        "A $250 car payment"
+      ],
+      "answer": 2,
+      "explanation": "Groceries change every month. The others cost the same each month, so they are fixed."
+    },
+    {
+      "id": "budgeting-p5",
+      "type": "number",
+      "prompt": "You take home $650. You planned $280 for needs, $190 for wants, and $120 for savings. How much is left over?",
+      "unit": "$",
+      "answer": 60,
+      "check": "650 - 280 - 190 - 120",
+      "explanation": "$650 − $280 − $190 − $120 = <b>$60</b> left. You could add it to savings or keep it as a cushion."
+    },
+    {
+      "id": "budgeting-p6",
+      "type": "mc",
+      "prompt": "You went $30 over on eating out this month. What's the best fix?",
+      "choices": [
+        "Take $30 out of your emergency fund",
+        "Ignore it, it's only $30",
+        "Cut $30 from another want, like clothes or games",
+        "Stop budgeting since it didn't work"
+      ],
+      "answer": 2,
+      "explanation": "Move money between categories, not out of savings. Budgets are supposed to be adjusted.",
+      "reviewed": "Judgment question; $30 appears in several choices on purpose."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "budgeting-q1",
+      "type": "mc",
+      "prompt": "In the 50/30/20 rule, what does the <b>20</b> stand for?",
+      "choices": [
+        "Wants",
+        "Needs",
+        "Savings and extra debt payments",
+        "Taxes"
+      ],
+      "answer": 2,
+      "explanation": "20% goes to savings, which includes paying extra on debt."
+    },
+    {
+      "id": "budgeting-q2",
+      "type": "number",
+      "prompt": "Your take-home pay is $3,000 a month. Using 50/30/20, how much is for <b>needs</b>?",
+      "unit": "$",
+      "answer": 1500,
+      "check": "3000 * 0.5",
+      "explanation": "$3,000 × 0.50 = <b>$1,500</b>."
+    },
+    {
+      "id": "budgeting-q3",
+      "type": "mc",
+      "prompt": "Should you build your budget on gross pay or net pay?",
+      "choices": [
+        "Gross pay, it's bigger",
+        "Net pay, it's what you actually get",
+        "It doesn't matter",
+        "Whichever is easier to remember"
+      ],
+      "answer": 1,
+      "explanation": "Budget with net (take-home) pay. Taxes are already gone before you can spend it."
+    },
+    {
+      "id": "budgeting-q4",
+      "type": "mc",
+      "prompt": "What does \"pay yourself first\" mean?",
+      "choices": [
+        "Buy something fun on payday",
+        "Move money into savings as soon as you're paid",
+        "Ask for a raise",
+        "Pay your bills late"
+      ],
+      "answer": 1,
+      "explanation": "Save first, then spend what's left, instead of saving what's left after spending."
+    },
+    {
+      "id": "budgeting-q5",
+      "type": "mc",
+      "prompt": "You take home $1,800. Using 50/30/20, how much goes to savings?",
+      "choices": [
+        "$180",
+        "$360",
+        "$540",
+        "$900"
+      ],
+      "answer": 1,
+      "check": "1800 * 0.2",
+      "explanation": "$1,800 × 0.20 = <b>$360</b>."
+    },
+    {
+      "id": "budgeting-q6",
+      "type": "mc",
+      "prompt": "Which is a <b>fixed</b> expense?",
+      "choices": [
+        "Gas for your car",
+        "Eating out",
+        "Your monthly rent",
+        "Birthday gifts"
+      ],
+      "answer": 2,
+      "explanation": "Rent is the same every month. The others change, so they're variable."
+    },
+    {
+      "id": "budgeting-q7",
+      "type": "number",
+      "prompt": "Income: $900. Spending: rent share $300, phone $50, food $200, fun $150, savings $150. How much is left?",
+      "unit": "$",
+      "answer": 50,
+      "check": "900 - 300 - 50 - 200 - 150 - 150",
+      "explanation": "$900 − $850 = <b>$50</b> left."
+    },
+    {
+      "id": "budgeting-q8",
+      "type": "mc",
+      "prompt": "Your needs take up 60% of your pay because rent is high. What's a smart move?",
+      "choices": [
+        "Give up on budgeting",
+        "Shrink wants for now so savings stays healthy, and look for ways to lower needs",
+        "Stop saving completely",
+        "Put the extra on a credit card"
+      ],
+      "answer": 1,
+      "explanation": "50/30/20 is a guide. When needs run high, trim wants first and keep saving something."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "budgeting-f1",
+      "front": "Budget",
+      "back": "A plan for where every dollar of your income goes."
+    },
+    {
+      "id": "budgeting-f2",
+      "front": "50/30/20 rule",
+      "back": "50% needs, 30% wants, 20% savings (of take-home pay). A guide, not a rule."
+    },
+    {
+      "id": "budgeting-f3",
+      "front": "Fixed expense",
+      "back": "A cost that's the same each month, like rent or a phone plan."
+    },
+    {
+      "id": "budgeting-f4",
+      "front": "Variable expense",
+      "back": "A cost that changes each month, like groceries or gas."
+    },
+    {
+      "id": "budgeting-f5",
+      "front": "Pay yourself first",
+      "back": "Move money to savings right when you're paid, before spending."
+    },
+    {
+      "id": "budgeting-f6",
+      "front": "Overspending",
+      "back": "Spending more than you planned (or more than you earn). Fix it by adjusting other categories."
+    }
+  ]
+}
